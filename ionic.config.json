@@ -1,0 +1,7 @@
+{
+  "name": "soundwave",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
