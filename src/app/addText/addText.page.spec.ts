@@ -3,19 +3,19 @@ import { IonicModule } from '@ionic/angular';
 
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { soundcanvaPage } from './soundcanva.page';
+import { addTextPage } from './addText.page';
 
-describe('soundcanvaPage', () => {
-  let component: soundcanvaPage;
-  let fixture: ComponentFixture<soundcanvaPage>;
+describe('addTextPage', () => {
+  let component: addTextPage;
+  let fixture: ComponentFixture<addTextPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [soundcanvaPage],
+      declarations: [addTextPage],
       imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(soundcanvaPage);
+    fixture = TestBed.createComponent(addTextPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

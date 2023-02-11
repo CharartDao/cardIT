@@ -2,10 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { soundcanvaPage } from './soundcanva.page';
+import { addImagePage } from './addImage.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { soundcanvaPageRoutingModule } from './soundcanva-routing.module';
+import { addImagePageRoutingModule } from './addImageRouting.module';
 
 @NgModule({
   imports: [
@@ -13,8 +13,8 @@ import { soundcanvaPageRoutingModule } from './soundcanva-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    soundcanvaPageRoutingModule
+    addImagePageRoutingModule
   ],
-  declarations: [soundcanvaPage]
+  declarations: [addImagePage]
 })
-export class soundcanvaPageModule {}
+export class addImagePageModule {}
