@@ -1,0 +1,278 @@
+$wheel: #84c1ff;
+$happyFisher1: #89f7fe;
+$happyFisher2: #66a6ff;
+$windmillMediumDark: #508BB3;
+$roofLight: #ff77aa;
+$winterNeva1: #a1c4fd;
+$winterNeva2: #c2e9fb;
+$flyHigh1: #48c6ef;
+$flyHigh2: #6f86d6;
+$passionateBed1: #ffc3a0;
+$passionateBed2: #ff7eb3;
+$morningSalat1: #B7F8DB;
+$morningSalat2: #50A7C2;
+$hill: #83d0c9;
+$mill: #fff;
+$windmillMediumLight: #649ECD;
+$windmill1: #667eea;
+$windmill2: #764ba2;
+
+body {
+  background-color: $windmillMediumLight;
+}
+
+.windmill {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+
+.hills2 {
+    width: 180px;
+    height: 240px;
+    background-image: linear-gradient($passionateBed1, $passionateBed2);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 200px 300px 30px 0;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      opacity: 0.8;
+      background-image: linear-gradient($flyHigh1, $flyHigh2);
+      border-radius: 300px 300px 0 0;
+    }
+    &:before {
+      width: 150px;
+      height: 150px;
+      bottom: 0;
+      left: 100px;
+    }
+  }
+
+.hills {
+  z-index: 8;
+  text-align: center;
+  width: 200px;
+  height: 180px;
+  background-image: linear-gradient($morningSalat1, $morningSalat2);
+  position: absolute;
+  top: 124px;
+  left: 40px;
+  opacity: 0.8;
+  border-radius: 200px 300px 30px 0;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    opacity: 0.7;
+    background-image: linear-gradient($winterNeva1, $winterNeva2);
+    border-radius: 300px 300px 0 0;
+  }
+  &:before {
+    width: 100px;
+    height: 110px;
+    bottom: 0;
+    left: 120px;
+}
+}
+
+.hill p {
+    padding: 50px;
+    margin-left: 100px;
+}
+
+.hill p::before {
+    content: '\201C';
+}
+
+.hill p::after {
+    content: '\201D';
+}
+
+[contenteditable='true'] {
+    caret-color: red;
+}
+
+.wheel {
+  z-index: 7;
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  animation: spin 15s linear infinite;
+}
+
+.windwheel {
+  position: absolute;
+  z-index: 7;
+  width: 8px;
+  height: 100px;
+  background-image: linear-gradient($windmill1, $windmill2);
+  border-radius: 50% 50% 50% 50% / 50% 50% 100% 100%;
+  margin-right: 10px;
+  top: -15px;
+  left: 92px;
+  &:before {
+    positioN: absolute;
+    z-index: 7;
+    content: "";
+    background-image: linear-gradient($windmill1, $windmill2);
+    opacity: 0.7;
+    border-radius: 50% 50% 50% 0 / 50% 50% 100% 100%;
+    width: 15px;
+    height: 75px;
+    left: 8px;
+  }
+}
+
+.windwheel2 {
+    position: absolute;
+    z-index: 7;
+    transform: rotate(120deg);
+    width: 8px;
+    height: 100px;
+    background-image: linear-gradient($windmill1, $windmill2);
+    border-radius: 50% 50% 50% 50% / 50% 50% 100% 100%;
+    margin-right: 10px;
+    top: 66px;
+    left: 138px;    
+    &:before {
+      positioN: absolute;    
+      z-index: 7;
+      content: "";
+      background-image: linear-gradient($windmill1, $windmill2);
+      opacity: 0.7;
+      border-radius: 50% 50% 50% 0 / 50% 50% 100% 100%;
+      width: 15px;
+      height: 75px;
+      left: 8px;
+    }
+}
+
+.windwheel3 {
+    position: absolute;
+    z-index: 7;
+    width: 8px;
+    height: 100px;
+    background-image: linear-gradient($windmill1, $windmill2);
+    border-radius: 50% 50% 50% 50% / 50% 50% 100% 100%;
+    margin-right: 10px;
+    transform: rotate(240deg);
+    top: 62px;    
+    left: 50px;
+    &:before {
+      positioN: absolute;
+      z-index: 7;
+      content: "";
+      background-image: linear-gradient($windmill1, $windmill2);
+      opacity: 0.7;
+      border-radius: 50% 50% 50% 0 / 50% 50% 100% 100%;
+      width: 15px;
+      height: 75px;
+      left: 8px;
+    }
+  }
+
+.roof {
+  position: absolute;
+  z-index: 6;
+  left: 0px;
+  top: 55px;
+  width: 0; 
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 70px solid $happyFisher2;
+}
+
+.mill {
+  position: absolute;
+  left: 0px;
+  top: 124px;
+  width: 50px;
+  height: 120px;
+  background-color: $mill;
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient($happyFisher1, $happyFisher2);
+    height: 50px;
+    width: 30px;
+    bottom: 0;
+    left: 5px;
+    border-radius: 50% 50% 0 0;
+    border-left: 5px solid $roofLight;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient($happyFisher1, $happyFisher2);
+    height: 40px;
+    width: 30px;
+    top: 20px;
+    left: 5px;
+    border-radius: 22px;
+    border-left: 5px solid $roofLight;
+  }
+}
+
+.cloud {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-image: linear-gradient($flyHigh1, $flyHigh2);
+  height: 20px;
+  width: 40px;
+  z-index: 1000;
+  border-radius: 40px 40px 0 0;
+  opacity: 0.7;
+  animation: clouds 10s linear alternate infinite;
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient($flyHigh1, $flyHigh2);
+    height: 30px;
+    width: 60px;
+    border-radius: 60px 60px 0 0;
+    bottom: 0;
+    right: 20px;
+  }
+}
+
+.cloud2 {
+    position: absolute;
+    top: 30px;
+    background-image: linear-gradient($passionateBed1, $passionateBed2);
+    height: 30px;
+    width: 50px;
+    z-index: 1000;
+    border-radius: 40px 40px 0 0;
+    opacity: 0.7;
+    animation: clouds 30s linear alternate-reverse infinite;
+    &:before {
+        content: "";
+        position: absolute;
+        background-color: $roofLight;
+        height: 30px;
+        width: 60px;
+        border-radius: 60px 60px 0 0;
+        bottom: 0;
+        right: 20px;
+    }
+}
+
+// animations
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes clouds {
+  100% {
+    transform: translateX(340px);
+  }
+}
