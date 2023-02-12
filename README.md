@@ -19,4 +19,4 @@ The page will reload when you make changes.
 
 ## Branches
 
-Currently the repo has two branches, dev and main. Only Push and Merge requests are accepted.  
+Currently the repo has two branches, dev and main. Only Push and Merge requests to dev are accepted. The pushes in dev will be merged into main after review by the Charart DAO DevArt engineer.   
