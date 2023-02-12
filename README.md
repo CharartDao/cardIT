@@ -3,7 +3,7 @@ This project is a playground for DevArt of transforming the sound, text and imag
 
 This project was created using Ionic Angular typescript.
 
-![Demo Image](https://github.com/CharartDao/SoundCanva/blob/dev/public/SoundCanva%20Effect%20Demo.jpeg)
+![Current Demo Image](https://github.com/CharartDao/cardIT/blob/dev/src/assets/img/Card%20IT!%20wip.jpg)
 
 ## Available Scripts
 
