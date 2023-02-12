@@ -1,0 +1,10 @@
+.rescircle {
+    width: 20%;
+    border-radius: 50%;
+    background: #b5b5b5;
+  }
+  .rescircle:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
