@@ -15,10 +15,6 @@ const routes: Routes = [
         loadChildren: () => import('./addText/addText.module').then(m => m.addTextPageModule)
       },
       {
-        path: 'addImage',
-        loadChildren: () => import('./addImage/addImage.module').then(m => m.addImagePageModule)
-      },
-      {
         path: '',
         redirectTo: '/recordSound',
         pathMatch: 'full'

@@ -2,6 +2,7 @@
   <ion-router-outlet></ion-router-outlet>
   
   <ion-tabs>
+
     <ion-tab-bar slot="top">
       <ion-title>
         Card IT!
@@ -15,6 +16,7 @@
         <ion-label>Art Print</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
+
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="recordSound">
         <ion-icon name="musical-notes"></ion-icon>
@@ -26,10 +28,12 @@
         <ion-label>Add Text</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button tab="addImage">
-        <ion-icon name="image-outline"></ion-icon>
-        <ion-label>Add Image</ion-label>
+      <ion-tab-button for="input" >
+        <ion-icon name="image-outline" for="input"></ion-icon>
+        <label for="input" >Add Image</label>
+        <input id="input" type="file" id="bgchanger" value="Add Image" class ="hideInput" (click)="changebackground()"/>    
       </ion-tab-button>
+
     </ion-tab-bar>
   </ion-tabs>
 </ion-app>
