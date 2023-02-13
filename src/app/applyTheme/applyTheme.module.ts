@@ -2,10 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { addTextPage } from './addText.page';
+import { applyThemePage } from './applyTheme.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { addTextPageRoutingModule } from './addTextRouting.module';
+import { applyThemePageRoutingModule } from './applyThemeRouting.module';
 
 @NgModule({
   imports: [
@@ -13,8 +13,8 @@ import { addTextPageRoutingModule } from './addTextRouting.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    addTextPageRoutingModule
+    applyThemePageRoutingModule
   ],
-  declarations: [addTextPage]
+  declarations: [applyThemePage]
 })
-export class addTextPageModule {}
+export class applyThemePageModule {}

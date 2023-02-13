@@ -3,19 +3,19 @@ import { IonicModule } from '@ionic/angular';
 
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { addTextPage } from './addText.page';
+import { applyThemePage } from './applyTheme.page';
 
-describe('addTextPage', () => {
-  let component: addTextPage;
-  let fixture: ComponentFixture<addTextPage>;
+describe('applyThemePage', () => {
+  let component: applyThemePage;
+  let fixture: ComponentFixture<applyThemePage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [addTextPage],
+      declarations: [applyThemePage],
       imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(addTextPage);
+    fixture = TestBed.createComponent(applyThemePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
