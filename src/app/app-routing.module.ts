@@ -11,8 +11,8 @@ const routes: Routes = [
         loadChildren: () => import('./recordSound/recordSound.module').then(m => m.recordSoundPageModule)
       },
       {
-        path: 'addText',
-        loadChildren: () => import('./addText/addText.module').then(m => m.addTextPageModule)
+        path: 'applyTheme',
+        loadChildren: () => import('./applyTheme/applyTheme.module').then(m => m.applyThemePageModule)
       },
       {
         path: '',

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { addTextPage } from './addText.page';
+import { applyThemePage } from './applyTheme.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: addTextPage,
+    component: applyThemePage,
   }
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class addTextPageRoutingModule {}
+export class applyThemePageRoutingModule {}
