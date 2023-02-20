@@ -1,16 +1,27 @@
-import { Component, Input } from '@angular/core';
+import { Component, forwardRef, Inject, Input } from '@angular/core';
+import { AppModule } from './app.module';
+import { applyThemePageModule } from './applyTheme/applyTheme.module';
+import {applyThemePage} from './applyTheme/applyTheme.page'
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
+  //providers:[applyThemePage, applyThemePageModule, AppModule], // triggers the empty page
 })
 
 export class AppComponent {
   @Input() name?: string;
 
-  constructor() {}
+  constructor(){ };
+
+  //constructor(@Inject(forwardRef(() => applyThemePage))private applyThemePage: applyThemePage){ }
+  
   defaultImage:string = 'https://picsum.photos/id/237/200/300';
+
+  /*selectImage() {  
+    this.applyThemePage.selectImage();
+  }*/
 
   getbackground(){
     try{
