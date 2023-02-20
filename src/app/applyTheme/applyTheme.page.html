@@ -24,6 +24,16 @@
     <div class="cloud2"></div>
   </div>
 
+  <ion-item *ngFor="let file of images; let i = index">
+    <ion-img [src]="file.data"></ion-img>
+    <ion-button slot="end" fill="clear" (click)="startUpload(file)">
+      <ion-icon slot="icon-only" name="cloud-upload"></ion-icon>
+    </ion-button>
+    <ion-button slot="end" fill="clear" (click)="deleteImage(file)">
+      <ion-icon slot="icon-only" name="trash"></ion-icon>
+    </ion-button>
+  </ion-item>
+
   <ion-slides [options]="{ slidesPerView: true, loop: true }">
     <ion-slide>
       
