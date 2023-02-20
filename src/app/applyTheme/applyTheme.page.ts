@@ -95,7 +95,7 @@ export class applyThemePage implements OnInit {
 
   async selectImage() {
     const image = await Camera.getPhoto({
-        quality: 90,
+        quality: 1,
         allowEditing: false,
         resultType: CameraResultType.Uri,
         source: CameraSource.Photos // Camera, Photos or Prompt

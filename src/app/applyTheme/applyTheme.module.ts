@@ -15,6 +15,9 @@ import { applyThemePageRoutingModule } from './applyThemeRouting.module';
     ExploreContainerComponentModule,
     applyThemePageRoutingModule
   ],
+  exports: [
+    applyThemePage
+  ],
   declarations: [applyThemePage]
 })
 export class applyThemePageModule {}
