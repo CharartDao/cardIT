@@ -7,22 +7,20 @@ import {applyThemePage} from './applyTheme/applyTheme.page'
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
-  //providers:[applyThemePage, applyThemePageModule, AppModule], // triggers the empty page
+  providers:[applyThemePage],
 })
 
 export class AppComponent {
   @Input() name?: string;
 
-  constructor(){ };
-
-  //constructor(@Inject(forwardRef(() => applyThemePage))private applyThemePage: applyThemePage){ }
+  constructor(@Inject(forwardRef(() => applyThemePage))private applyThemePage: applyThemePage){ }
   
   defaultImage:string = 'https://picsum.photos/id/237/200/300';
 
-  /*selectImage() {  
+  selectImage() {  
     this.applyThemePage.selectImage();
-  }*/
-
+  }
+/*
   getbackground(){
     try{
       var e = document.getElementsByTagName('body')[0].style.backgroundImage = localStorage.getItem('back') ? "url('"+localStorage.getItem('back')+"')" : this.defaultImage;
@@ -43,9 +41,10 @@ export class AppComponent {
       console.log("error", err);
       return err;
     }
-  }
+  } */
 }
 
+/*
 function getBase64Image(img: ImageBitmap) {
   var canvas = document.createElement("canvas");
   canvas.width = img.width;
@@ -58,3 +57,4 @@ function getBase64Image(img: ImageBitmap) {
 
   return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 }
+*/
