@@ -25,6 +25,17 @@ SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom, IonicSlides]);
 export class applyThemePage implements OnInit {
 	images: LocalFile[] = [];
 
+    slideOpts = {
+        slidesPerView: 3,
+        spaceBetween: 5,
+        speed: 400,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000
+        },
+    }
+
 	constructor(
 		private plt: Platform,
 		private http: HttpClient,
