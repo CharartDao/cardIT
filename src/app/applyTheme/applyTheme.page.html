@@ -31,6 +31,21 @@
     <div class="bone"></div>
   </div> -->
 
+  <!-- new Theme
+  <div class="cat">
+    <div class="cat-head">
+      <div class="cat-head">
+        <div class="cat-ears"></div>
+        <div class="cat-nose"></div>
+        <div class="cat-mouth"></div>
+        <div class="cat-eyes"></div>
+      </div>
+      <div class="cat-tail"></div>
+      <div class="cat-leg"></div>
+    </div>
+  </div>
+  -->
+
   <ion-item *ngFor="let file of images; let i = index">
     <ion-img [src]="file.data"></ion-img>
     <ion-button slot="end" fill="clear" (click)="startUpload(file)">
