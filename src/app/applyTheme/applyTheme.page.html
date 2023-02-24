@@ -46,6 +46,24 @@
   </div>
   -->
 
+  <!-- new Theme
+  <div class="dandelion-container">
+    <div class="dandelion">
+      <div class="stem"></div>
+      <div class="head">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+      </div>
+    </div>
+  </div>
+  -->
+
   <ion-item *ngFor="let file of images; let i = index">
     <ion-img [src]="file.data"></ion-img>
     <ion-button slot="end" fill="clear" (click)="startUpload(file)">
