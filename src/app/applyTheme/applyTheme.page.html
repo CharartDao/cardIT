@@ -24,6 +24,13 @@
     <div class="cloud2"></div>
   </div>
 
+  <!-- new Theme
+  <div class="dog">
+    <div class="dog-body"></div>
+    <div class="dog-head"></div>
+    <div class="bone"></div>
+  </div> -->
+
   <ion-item *ngFor="let file of images; let i = index">
     <ion-img [src]="file.data"></ion-img>
     <ion-button slot="end" fill="clear" (click)="startUpload(file)">
