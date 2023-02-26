@@ -821,7 +821,7 @@ body {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pure CSS Animated Dandelion Flower</title>
+	<title>Pure CSS Animated Piano</title>
 	<style type="text/css">
 .piano {
   display: flex;
@@ -953,6 +953,292 @@ body {
 </html>
 */
 
+/*
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pure CSS Animated Sun System</title>
+<style type="text/css">
+
+.santa {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  animation: jump 2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.head {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+}
+
+.hat {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translateX(-50%);
+}
+
+.hat-top {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  width: 40px;
+  height: 20px;
+  transform: translateX(-50%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ff0000;
+}
+
+.hat-bottom {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  width: 60px;
+  height: 40px;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+}
+
+.face {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ebc6ba;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.eyes {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 20px;
+  height: 10px;
+  transform: translateX(-50%);
+}
+
+.eye {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.eye:first-of-type {
+  left: 2px;
+}
+
+.eye:last-of-type {
+  right: 2px;
+}
+
+.nose {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  transform: translateX(-50%);
+}
+
+.mouth {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 20px;
+  height:
+10px;
+border-bottom: 2px solid #000000;
+transform: translateX(-50%);
+}
+
+.beard {
+position: absolute;
+top: 10px;
+left: 50%;
+width: 40px;
+height: 20px;
+background-color: #ffffff;
+transform: translateX(-50%);
+}
+
+.body {
+position: absolute;
+top: 25px;
+left: 50%;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+background-color: #d93008;
+transform: translateX(-50%);
+}
+
+.arms {
+position: absolute;
+top: 55px;
+left: 50%;
+width: 60px;
+height: 20px;
+transform: translateX(-50%);
+}
+
+.arm {
+position: absolute;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #ffffff;
+}
+
+.arm:first-of-type {
+left: -20px;
+}
+
+.arm:last-of-type {
+right: -20px;
+}
+
+.sack {
+position: absolute;
+top: 75px;
+left: 50%;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background-color: #ffffff;
+transform: translateX(-50%);
+}
+
+.deers {
+position: absolute;
+bottom: 0;
+left: -10%;
+width: 120%;
+height: 100px;
+animation: run 2s linear infinite;
+}
+
+.deer {
+position: absolute;
+top: 10px;
+width: 30px;
+height: 30px;
+background-color: #8b4513;
+border-radius: 50%;
+animation: deer-run 1s linear infinite;
+}
+
+.deer:nth-of-type(2) {
+top: 40px;
+left: 20%;
+animation-delay: -0.5s;
+}
+
+.deer:last-of-type {
+top: 70px;
+left: 40%;
+animation-delay: -1s;
+}
+
+@keyframes jump {
+0% {
+transform: translate(0, 0);
+}
+25% {
+transform: translate(0, -10px);
+}
+50% {
+transform: translate(0, 0);
+}
+75% {
+transform: translate(0, 10px);
+}
+100% {
+transform: translate(0, 0);
+}
+}
+
+@keyframes run {
+0% {
+transform: translateX(-10%);
+}
+100% {
+transform: translateX(10%);
+}
+}
+
+@keyframes deer-run {
+0% {
+transform: translateX(0);
+}
+25% {
+transform: translateX(-10px);
+}
+50% {
+transform: translateX(0);
+}
+75% {
+transform: translateX(10px);
+}
+100% {
+transform: translateX(0);
+}
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="santa">
+  <div class="head"></div>
+  <div class="hat">
+    <div class="hat-top"></div>
+    <div class="hat-bottom"></div>
+  </div>
+  <div class="face">
+    <div class="eyes">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+    <div class="nose"></div>
+    <div class="mouth"></div>
+  </div>
+  <div class="beard"></div>
+  <div class="body"></div>
+  <div class="arms">
+    <div class="arm"></div>
+    <div class="arm"></div>
+  </div>
+  <div class="sack"></div>
+  <div class="deers">
+    <div class="deer"></div>
+    <div class="deer"></div>
+    <div class="deer"></div>
+  </div>
+</div>
+</body>
+</html>
+*/
+
 .dandelion-container {
   height: 200px;
   position: relative;
@@ -1052,3 +1338,320 @@ body {
 				transform: rotateZ(360deg) translateY(0);
 			}
 		}
+
+/*
+<html>
+<head>
+	<title>css code with christmas bell animation with sound</title>
+	<style type="text/css">
+  .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bell {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  animation-name: bell-swing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom center;
+}
+
+.bell::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 10px 10px 0 0;
+  transform: translateX(-50%);
+}
+
+.bell::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 0 0 10px 10px;
+  transform: translateX(-50%);
+}
+
+@keyframes bell-swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.bell:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.bell:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.bell:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.bell:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.bell:hover {
+  animation-play-state: paused;
+}
+
+.bell:hover::before, .bell:hover::after {
+  background-color: green;
+}
+
+.bell:hover::before {
+  height: 80px;
+}
+
+.bell:hover::after {
+  width: 60px;
+}
+
+.bell:hover ~ #bell-sound {
+  display: block;
+}
+
+#bell-sound {
+  display: none;
+}
+
+
+	</style>
+</head>
+<div class="container">
+  <div class="bell"></div>
+  <div class="bell"></div>
+  <div class="bell"></div>
+  <div class="bell"></div>
+</div>
+
+<audio id="sound">
+  <source src="bell.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
+*/
+/*
+<html>
+<head>
+	<title>css code with christmas bell animation with sound</title>
+	<style type="text/css">
+.lucky-cat-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+}
+
+.lucky-cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #ffaa00;
+  border-radius: 50%;
+  animation: lucky-cat-bounce 1s ease-in-out infinite;
+}
+
+.head {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffe6b3;
+  border-radius: 50%;
+}
+
+.body {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  width: 60px;
+  height: 40px;
+  background-color: #f8d7e9;
+  border-radius: 20px 20px 50% 50%;
+}
+
+.left-paw, .right-paw {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 15px;
+  background-color: #f8d7e9;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(30deg);
+}
+
+.left-paw {
+  left: 10px;
+}
+
+.right-paw {
+  right: 10px;
+}
+
+.left-ear, .right-ear {
+  position: absolute;
+  top: -10px;
+  width: 10px;
+  height: 25px;
+  background-color: #ff6699;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-45deg);
+}
+
+.tail {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  width: 10px;
+  height: 75px;
+  background-color: #ffaa00;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-25deg);
+}
+
+.left-ear {
+  left: 20px;
+}
+
+.right-ear {
+  right: 20px;
+  transform: rotate(45deg);
+}
+
+.left-eye, .right-eye {
+  position: absolute;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.left-eye {
+  left: 25px;
+}
+
+.right-eye {
+  right: 25px;
+}
+
+.nose {
+  position: absolute;
+  top: 28px;
+  left: 45px;
+  width: 10px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.mouth {
+  position: absolute;
+  top: 38px;
+  left: 40px;
+  width: 20px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+@keyframes lucky-cat-bounce {
+0% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-15px);
+}
+100% {
+transform: translateY(0);
+}
+}
+
+.lucky-cat-container:hover .lucky-cat {
+animation: lucky-cat-bounce 0.5s ease-in-out infinite;
+}
+
+.lucky-cat-container:hover #sound-effect {
+display: block;
+}
+
+#sound-effect {
+display: none;
+}
+
+.lucky-cat-container:hover #sound-effect {
+display: block;
+}
+
+.lucky-cat-container:hover #sound-effect {
+display: block;
+animation: play-sound 0.5s;
+}
+
+@keyframes play-sound {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.5);
+}
+100% {
+transform: scale(1);
+}
+}
+
+
+	</style>
+</head>
+<body>
+<div class="lucky-cat-container">
+  <div class="lucky-cat">
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="left-paw"></div>
+    <div class="right-paw"></div>
+    <div class="left-ear"></div>
+    <div class="right-ear"></div>
+    <div class="left-eye"></div>
+    <div class="right-eye"></div>
+    <div class="nose"></div>
+    <div class="mouth"></div>
+    <div class="tail"></div>
+  </div>
+</div>
+<audio id="sound-effect" src="lucky-cat-sound-effect.mp3"></audio>
+
+</body>
+</html>
+*/
